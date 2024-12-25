@@ -92,11 +92,26 @@ img {
 }
 
 /* ============================
-ハンバーガーメニュー
+header
 ========================= */
+.header {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  background-color: var(--bg-white);
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 2.5vw;
+}
+
 /* メニューのスタイル */
 .header-menu {
-  position: fixed;
+  position: absolute;
   top: 0;
   opacity: 0;
   transition: 0.3s;
@@ -170,6 +185,12 @@ img {
   clip-path: inset(50%);
 }
 
+
+.hamburger__wrapper {
+  width: 30px;
+  height: 20px;
+}
+
 @media screen and (max-width: 900px) {
   .hamburger__wrapper {
     width: 100%;
@@ -177,25 +198,20 @@ img {
 }
 
 .hamburger {
-  width: 100px;
-  height: 100px;
-  background: var(--bg-red);
+  width: 30px;
+  height: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 14px;
+  gap: 10px;
   z-index: 1001;
-  position: fixed;
-  top: 0;
-  right: 0;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
   .hamburger {
-    width: 75px;
-    height: 75px;
+    width: 30px;
+    height: 20px;
   }
 }
 
@@ -207,7 +223,7 @@ img {
   margin: auto;
   width: 50%;
   height: 2px;
-  background-color: #ffffff;
+  background-color: var(--line-black);
   transition: transform 0.3s, opacity 0.3s;
   position: absolute;
 }
