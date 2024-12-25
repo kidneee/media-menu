@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/* ============================
+* フォント、背景
+* ========================= */
+:root {
+  --font-10: 0.625rem;
+  --font-12: 0.75rem;
+  --font-13: 0.8125rem;
+  --font-14: 0.875rem;
+  --font-15: 0.9375rem;
+  --font-16: 1rem;
+  --font-17: 1.0625rem;
+  --font-18: 1.125rem;
+  --font-20: 1.25rem;
+  --font-21: 1.3125rem;
+  --font-22: 1.375rem;
+  --font-23: 1.4375rem;
+  --font-24: 1.5rem;
+  --font-26: 1.625rem;
+  --font-27: 1.6875rem;
+  --font-28: 1.75rem;
+  --font-30: 1.875rem;
+  --font-32: 2rem;
+  --font-34: 2.215rem;
+  --font-36: 2.25rem;
+  --font-40: 2.25rem;
+  --font-42: 2.625rem;
+  --font-45: 2.8125rem;
+  --font-46: 2.8755rem;
+  --font-48: 3rem;
+  --font-52: 3.25rem;
+  --font-56: 3.5rem;
+  --font-65: 4.0625rem;
+  --font-72: 4.5rem;
+  /* 104px */
+  --title: 6.5rem;
+
+  /* 文字カラー */
+  --title-color: #5CAED3;
+  --font-black: #333;
+  --font-white: #fff;
+
+  /* ラインカラー */
+  --line-black: #333;
+  --line-white: #fff;
+  --line-gray: #707070;
+
+  /* 背景色 */
+  --bg-black: #121212;
+  --bg-white: #fff;
+  --bg-red: #ff2a3a;
+  --bg-gray: #ccc;
+  --bg-darkgray: #414141;
+  --bg-orange: #ff9646;
+  --footer-bg: #ebebeb;
+
+  /* ボタンカラー */
+  --btn-color: #4b4b4b;
+  --btn-bg: #19a59a;
+}
+
+/* メディアクエリ */
+/* @media screen and (max-width: 768px) {
+} */
+
+/* ============================
+* 共通
+* ========================= */
+body {
+  color: var(--font-black);
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-size: 100%;
+}
+
+a {
+  display: block;
+  cursor: pointer;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+img {
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
