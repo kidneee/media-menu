@@ -9,12 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
     document.documentElement.classList.toggle('is-drawerActive');
   });
 
-  document.getElementById('js-buttonHamburger').addEventListener('click', function () {
-    const drawer = document.getElementById('drawerMenu');
-    if (drawer.classList.contains('open')) {
-      drawer.classList.remove('open');
-    } else {
-      drawer.classList.add('open');
-    }
+  // Slickの初期化
+  $(document).ready(function () {
+    $('.slider').slick({
+      settingName: 'settingValue', // 実際の設定に置き換えてください
+    });
   });
 });
