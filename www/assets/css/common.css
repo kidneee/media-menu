@@ -67,6 +67,11 @@
 /* ============================
 * 共通
 * ========================= */
+html:focus-within {
+  scroll-behavior: smooth;
+  scroll-padding-top: 101px;
+}
+
 body {
   color: var(--font-black);
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
@@ -93,12 +98,13 @@ img {
 
 /* セクションタイトル */
 .section__title {
-  font-size: clamp(var(--font-24), 2.25vw, var(--font-36));
-  line-height: 1.167;
+  font-size: var(--font-36);
+  line-height: 1.694;
   color: var(--font-black);
   font-weight: bold;
   text-align: center;
   margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 .section__title.contact__heading {
@@ -136,7 +142,7 @@ img {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  padding: 0 2.5vw;
+  padding: 0 40px;
 }
 
 .header__logo {
