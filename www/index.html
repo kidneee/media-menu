@@ -14,14 +14,14 @@
     <div class="header__inner">
       <!-- header__logo -->
       <h1 class="header__logo">
-        <a href="#" class="header__logo-link">
+        <a href="./" class="header__logo-link">
           <img src="./assets/img/logo.svg" width="175" height="40" alt="Sneakers" class="header__logo-img">
         </a>
       </h1>
 
       <!-- hamburger-menu -->
       <div class="hamburger__wrapper">
-        <button type="button" id="js-buttonHamburger" class="hamburger" aria-controls="global-nav" aria-expanded="false">
+        <button type="button" id="js-buttonHamburger" class="hamburger" aria-controls="drawerMenu" aria-expanded="false">
           <span class="hamburger__line">
             <span class="hidden-text">
               メニューを開閉する
@@ -32,16 +32,18 @@
 
       <!-- drawerMenu -->
       <nav id="drawerMenu" class="header-menu">
-        <ul class="header-menu-list">
-          <li class="header-menu__item"><a href="#" class="header-menu__link">Pick up</a></li>
-          <li class="header-menu__item"><a href="#" class="header-menu__link">Feature</a></li>
-          <li class="header-menu__item"><a href="#" class="header-menu__link">Contact</a></li>
-        </ul>
-        <ul class="header__sns-list">
-          <li class="header__sns__item"><a href="#" class="header__sns__link">Twitter</a></li>
-          <li class="header__sns__item"><a href="#" class="header__sns__link">facebook</a></li>
-          <li class="header__sns__item"><a href="#" class="header__sns__link">instagram</a></li>
-        </ul>
+        <div class="header-menu__list-wrapper">
+          <ul class="header-menu__list">
+            <li class="header-menu__item"><a href="#pickup" class="header-menu__link">Pick up</a></li>
+            <li class="header-menu__item"><a href="#feature" class="header-menu__link">Feature</a></li>
+            <li class="header-menu__item"><a href="#contact" class="header-menu__link">Contact</a></li>
+          </ul>
+          <ul class="header-menu__sns-list">
+            <li class="header-menu__sns-item"><a href="#" class="header-menu__sns-link">Twitter</a></li>
+            <li class="header-menu__sns-item"><a href="#" class="header-menu__sns-link">facebook</a></li>
+            <li class="header-menu__sns-item"><a href="#" class="header-menu__sns-link">instagram</a></li>
+          </ul>
+        </div><!-- /.header-menu__list-wrapper -->
       </nav>
     </div><!-- /.header__inner -->
   </header>
@@ -52,7 +54,7 @@
     </div><!-- /.main-video -->
 
     <!-- pickup -->
-    <section class="pickup">
+    <section id="pickup" class="pickup">
       <div class="section__inner">
         <h2 class="section__titile pickup__heading">Pick up</h2>
         <div class="pickup__body">
@@ -88,11 +90,11 @@
     </section>
 
     <!-- feature -->
-    <section class="feature">
+    <section id="feature" class="feature">
       <div class="section__inner">
         <h2 class="section__titile feature__heading">Feature</h2>
         <div class="feature__body">
-          <div class="feature__item">
+          <article class="feature__item">
             <div class="feature__item--upside">
               <img src="./assets/img/feature1.jpg" width="360" height="240" alt="feature1" class="feature__img">
             </div><!-- /.feature__item--upside -->
@@ -102,8 +104,8 @@
               <p class="feature__desc">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
               <time datetime="2024-12-01">XXXX.XX.XX</time>
             </div><!-- /.feature__item--bottom -->
-          </div><!-- /.feature__item -->
-          <div class="feature__item">
+          </article><!-- /.feature__item -->
+          <article class="feature__item">
             <div class="feature__item--upside">
               <img src="./assets/img/feature2.jpg" width="360" height="240" alt="feature2" class="feature__img">
             </div><!-- /.feature__item--upside -->
@@ -113,8 +115,8 @@
               <p class="feature__desc">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
               <time datetime="2024-12-01">XXXX.XX.XX</time>
             </div><!-- /.feature__item--bottom -->
-          </div><!-- /.feature__item -->
-          <div class="feature__item">
+          </article><!-- /.feature__item -->
+          <article class="feature__item">
             <div class="feature__item--upside">
               <img src="./assets/img/feature3.jpg" width="360" height="240" alt="feature3" class="feature__img">
             </div><!-- /.feature__item--upside -->
@@ -124,8 +126,8 @@
               <p class="feature__desc">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
               <time datetime="2024-12-01">XXXX.XX.XX</time>
             </div><!-- /.feature__item--bottom -->
-          </div><!-- /.feature__item -->
-          <div class="feature__item">
+          </article><!-- /.feature__item -->
+          <article class="feature__item">
             <div class="feature__item--upside">
               <img src="./assets/img/feature4.jpg" width="360" height="240" alt="feature4" class="feature__img">
             </div><!-- /.feature__item--upside -->
@@ -135,8 +137,8 @@
               <p class="feature__desc">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
               <time datetime="2024-12-01">XXXX.XX.XX</time>
             </div><!-- /.feature__item--bottom -->
-          </div><!-- /.feature__item -->
-          <div class="feature__item">
+          </article><!-- /.feature__item -->
+          <article class="feature__item">
             <div class="feature__item--upside">
               <img src="./assets/img/feature5.jpg" width="360" height="240" alt="feature5" class="feature__img">
             </div><!-- /.feature__item--upside -->
@@ -146,8 +148,8 @@
               <p class="feature__desc">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
               <time datetime="2024-12-01">XXXX.XX.XX</time>
             </div><!-- /.feature__item--bottom -->
-          </div><!-- /.feature__item -->
-          <div class="feature__item">
+          </article><!-- /.feature__item -->
+          <article class="feature__item">
             <div class="feature__item--upside">
               <img src="./assets/img/feature6.jpg" width="360" height="240" alt="feature6" class="feature__img">
             </div><!-- /.feature__item--upside -->
@@ -157,8 +159,8 @@
               <p class="feature__desc">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
               <time datetime="2024-12-01">XXXX.XX.XX</time>
             </div><!-- /.feature__item--bottom -->
-          </div><!-- /.feature__item -->
-          <div class="feature__item">
+          </article><!-- /.feature__item -->
+          <article class="feature__item">
             <div class="feature__item--upside">
               <img src="./assets/img/feature7.jpg" width="360" height="240" alt="feature7" class="feature__img">
             </div><!-- /.feature__item--upside -->
@@ -168,8 +170,8 @@
               <p class="feature__desc">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
               <time datetime="2024-12-01">XXXX.XX.XX</time>
             </div><!-- /.feature__item--bottom -->
-          </div><!-- /.feature__item -->
-          <div class="feature__item">
+          </article><!-- /.feature__item -->
+          <article class="feature__item">
             <div class="feature__item--upside">
               <img src="./assets/img/feature8.jpg" width="360" height="240" alt="feature8" class="feature__img">
             </div><!-- /.feature__item--upside -->
@@ -179,8 +181,8 @@
               <p class="feature__desc">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
               <time datetime="2024-12-01">XXXX.XX.XX</time>
             </div><!-- /.feature__item--bottom -->
-          </div><!-- /.feature__item -->
-          <div class="feature__item">
+          </article><!-- /.feature__item -->
+          <article class="feature__item">
             <div class="feature__item--upside">
               <img src="./assets/img/feature9.jpg" width="360" height="240" alt="feature9" class="feature__img">
             </div><!-- /.feature__item--upside -->
@@ -190,8 +192,7 @@
               <p class="feature__desc">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
               <time datetime="2024-12-01">XXXX.XX.XX</time>
             </div><!-- /.feature__item--bottom -->
-          </div><!-- /.feature__item -->
-
+          </article><!-- /.feature__item -->
         </div><!-- /.feature__body -->
       </div><!-- /.section__inner -->
     </section>

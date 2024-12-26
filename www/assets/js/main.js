@@ -17,14 +17,4 @@ document.addEventListener('DOMContentLoaded', () => {
       drawer.classList.add('open');
     }
   });
-
-  // CSSファイルにタイムスタンプを付加
-  const timestamp = new Date().getTime();
-  const stylesheets = ['./assets/css/reset.css', './assets/css/common.css', './assets/css/page.css'];
-  stylesheets.forEach((href) => {
-    const linkElement = document.createElement('link');
-    linkElement.rel = 'stylesheet';
-    linkElement.href = `${href}?${timestamp}`;
-    document.head.appendChild(linkElement);
-  });
 });
