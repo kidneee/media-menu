@@ -34,4 +34,21 @@ document.addEventListener('DOMContentLoaded', () => {
       },
     ],
   });
+
+  //画像フェード表示
+  const featureImages = document.querySelectorAll('.feature__img');
+  if (featureImages.length > 0) {
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    featureImages.forEach((img) => {
+      observer.observe(img);
+    });
+  }
 });
