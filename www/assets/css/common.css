@@ -361,8 +361,24 @@ img {
   margin-bottom: 100px;
 }
 
-.pickup__body {
-  display: flex;
+.slider {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.slick-slide {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.slick-list {
+  overflow: visible;
+}
+
+.pickup__item {
+  margin: 0 30px;
 }
 
 /* FEATURE */

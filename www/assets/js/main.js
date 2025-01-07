@@ -1,18 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
   // ハンバーガーメニュー
   const hamburgerButton = document.querySelector('#js-buttonHamburger');
+  const drawerMenu = document.getElementById('drawerMenu');
+  const header = document.querySelector('.header');
 
-  hamburgerButton.addEventListener('click', (e) => {
-    const isExpanded = e.currentTarget.getAttribute('aria-expanded') !== 'false';
-    e.currentTarget.setAttribute('aria-expanded', !isExpanded);
-
-    document.documentElement.classList.toggle('is-drawerActive');
+  hamburgerButton.addEventListener('click', () => {
+    const isExpanded = hamburgerButton.getAttribute('aria-expanded') === 'true';
+    hamburgerButton.setAttribute('aria-expanded', !isExpanded);
+    drawerMenu.classList.toggle('open');
+    header.classList.toggle('open');
   });
 
-  // Slickの初期化
-  $(document).ready(function () {
-    $('.slider').slick({
-      settingName: 'settingValue', // 実際の設定に置き換えてください
-    });
+  //Slick
+  $('.slider').slick({
+    centerMode: true,
+    centerPadding: '3%', // 見切れる幅を%で指定
   });
 });
