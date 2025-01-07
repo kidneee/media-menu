@@ -15,5 +15,23 @@ document.addEventListener('DOMContentLoaded', () => {
   $('.slider').slick({
     centerMode: true,
     centerPadding: '6%', // 見切れる幅を%で指定
+    slidesToShow: 3, // 一度に表示するスライド数
+    slidesToScroll: 1, // 一度にスクロールするスライド数
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1, // ブレークポイント以下で表示スライド数を変更
+          centerPadding: '6.5%',
+        },
+      },
+      {
+        breakpoint: 657,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '7.5%',
+        },
+      },
+    ],
   });
 });
