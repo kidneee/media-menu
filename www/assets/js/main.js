@@ -14,6 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
   //Slick
   $('.slider').slick({
     centerMode: true,
-    centerPadding: '3%', // 見切れる幅を%で指定
+    centerPadding: '6%', // 見切れる幅を%で指定
   });
 });
