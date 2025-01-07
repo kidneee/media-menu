@@ -498,12 +498,7 @@ img {
 .feature__desc {
   font-size: 0.9rem;
   line-height: 1.694;
-}
-
-@media screen and (max-width: 767px) {
-  .feature__desc {
-    font-weight: bold;
-  }
+  font-weight: bold;
 }
 
 .feature__date {
@@ -570,7 +565,7 @@ img {
 
 @media screen and (max-width: 600px) {
   .contact__body--left {
-    max-width: 100%;
+    width: 100%;
   }
 }
 
