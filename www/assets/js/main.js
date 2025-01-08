@@ -32,6 +32,13 @@ document.addEventListener('DOMContentLoaded', () => {
           centerPadding: '7.5%',
         },
       },
+      {
+        breakpoint: 420,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: '50px',
+        },
+      },
     ],
   });
 
