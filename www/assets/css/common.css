@@ -74,7 +74,7 @@ html:focus-within {
 
 body {
   color: var(--font-black);
-  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  font-family: Arial, sans-serif;
   font-style: normal;
   font-size: 100%;
   box-sizing: border-box;
@@ -100,11 +100,11 @@ img {
 /* セクションタイトル */
 .section__title {
   font-size: var(--font-36);
-  line-height: 1.694;
+  line-height: 1.167;
   color: var(--font-black);
   font-weight: bold;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   text-transform: uppercase;
 }
 
@@ -139,7 +139,6 @@ img {
   margin: 0 auto;
   padding: 0 16px;
 }
-
 
 /* ============================
   Header
@@ -368,7 +367,7 @@ img {
 .main-video__wrapper {
   width: 100%;
   margin-top: 80px;
-  margin-bottom: 108px;
+  margin-bottom: 100px;
 }
 
 @media screen and (max-width: 600px) {
@@ -379,7 +378,7 @@ img {
 
 .main-video {
   width: 100%;
-  height: 100%;
+  height: 600px;
   object-fit: cover;
 }
 
@@ -402,12 +401,12 @@ img {
 
 .slider {
   width: 100%;
-  height: 100%;
+  height: 240px;
   overflow: hidden;
 }
 
-.slick-slide {
-  width: 100%;
+.slick-slide img {
+  width: 360px;
   height: 100%;
   box-sizing: border-box;
 }
@@ -426,6 +425,10 @@ img {
   }
 }
 
+.pickup__item.slick-slide.slick-cloned.slick-active {
+  width: 360px;
+}
+
 /* FEATURE */
 .feature__inner {
   margin-bottom: 60px;
@@ -441,7 +444,7 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
-  gap: 26px;
+  gap: 25px 26px;
 }
 
 @media screen and (max-width: 983px) {
@@ -459,7 +462,7 @@ img {
 
 .feature__item {
   background-color: var(--bg-white);
-  box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.16);
 }
 
 .feature__img {
@@ -480,7 +483,6 @@ img {
   padding: 30px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -492,13 +494,17 @@ img {
 .feature__category,
 .feature__date {
   font-size: var(--font-12);
-  line-height: 1.7;
+  line-height: 1.167;
+}
+
+.feature__category {
+  margin-bottom: 15px;
 }
 
 .feature__desc {
   font-size: 0.9rem;
   line-height: 1.694;
-  font-weight: bold;
+  margin-bottom: 14px;
 }
 
 .feature__date {
@@ -572,7 +578,7 @@ img {
 .contact__desc-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 22px;
 }
 
 .contact__body--right {
@@ -597,10 +603,13 @@ img {
   }
 }
 
-.contact__form-label,
+.contact__form-label {
+  font-size: 0.9rem;
+}
+
 .contact__desc {
   font-size: 0.9rem;
-  line-height: 1.7;
+  line-height: 1.66;
 }
 
 .contact__form-input,

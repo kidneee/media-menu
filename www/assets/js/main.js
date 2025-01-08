@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //Slick
   $('.slider').slick({
     centerMode: true,
-    centerPadding: '6%', // 見切れる幅を%で指定
+    centerPadding: '170px', // 見切れる幅を%で指定
     slidesToShow: 3, // 一度に表示するスライド数
     slidesToScroll: 1, // 一度にスクロールするスライド数
     responsive: [
