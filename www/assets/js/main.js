@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     slidesToScroll: 1, // 一度にスクロールするスライド数
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 769,
         settings: {
           slidesToShow: 1, // ブレークポイント以下で表示スライド数を変更
           centerPadding: '6.5%',
